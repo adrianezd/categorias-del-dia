@@ -1,0 +1,14 @@
+{
+  "name": "Categorías del Día",
+  "short_name": "Categorías del Día",
+  "description": "Juego de palabras diario en español: agrupa 16 palabras en 4 categorías ocultas.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f3ec",
+  "theme_color": "#cc5b3f",
+  "lang": "es",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

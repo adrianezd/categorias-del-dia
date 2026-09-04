@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Categorías del Día — Juego de palabras diario con categorías ocultas</title>
+<meta name="description" content="Categorías del Día: un juego de palabras diario y gratis en español. Agrupa 16 palabras en 4 categorías ocultas antes de agotar tus errores. Puzzle diario nuevo cada día, optimizado para móvil.">
+<meta name="keywords" content="juego de palabras diario, categorías ocultas, puzzle diario gratis, categorías del día, juego estilo wordle, juego de palabras en español, connections en español">
+<link rel="canonical" href="https://adrianezd.github.io/categorias-del-dia/">
+
+<meta property="og:title" content="Categorías del Día — Juego de palabras diario">
+<meta property="og:description" content="Agrupa 16 palabras en 4 categorías ocultas antes de agotar tus errores. Un puzzle nuevo cada día, gratis y en español.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://adrianezd.github.io/categorias-del-dia/">
+<meta property="og:image" content="https://adrianezd.github.io/categorias-del-dia/favicon.svg">
+<meta property="og:locale" content="es_ES">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Categorías del Día — Juego de palabras diario">
+<meta name="twitter:description" content="Agrupa 16 palabras en 4 categorías ocultas antes de agotar tus errores. Un puzzle nuevo cada día, gratis y en español.">
+<meta name="twitter:image" content="https://adrianezd.github.io/categorias-del-dia/favicon.svg">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#cc5b3f">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Categorías del Día",
+  "description": "Juego de palabras diario en español: agrupa 16 palabras en 4 categorías ocultas antes de agotar tus errores. Gratis, sin descargas, optimizado para móvil.",
+  "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "url": "https://adrianezd.github.io/categorias-del-dia/",
+  "inLanguage": "es",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cómo se juega a Categorías del Día?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cada día ves 16 palabras. Selecciona 4 que creas que comparten una categoría oculta y pulsa Enviar. Si aciertas, el grupo se revela con su nombre; si fallas, cuenta como error. Tienes 4 errores antes de que termine la partida." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué significan los colores de las categorías?",
+      "acceptedAnswer": { "@type": "Answer", "text": "El color indica la dificultad: amarillo es la categoría más evidente, verde y azul son intermedias, y morado es la más difícil, normalmente con un juego de palabras o una trampa." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es gratis y necesito descargar algo?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Es completamente gratis y funciona directamente en el navegador de tu móvil u ordenador, sin necesidad de descargar ninguna aplicación." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo jugar a los puzzles de días anteriores?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, en el Archivo puedes repasar todos los puzzles anteriores en modo práctica libre, sin que afecte a tu puzzle del día ni a tus estadísticas." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué significa 'estás muy cerca'?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Si de tus 4 palabras seleccionadas 3 pertenecen a la misma categoría oculta y solo 1 no encaja, verás el aviso '¡Un error, estabas muy cerca!' para ayudarte a afinar tu siguiente intento." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuándo aparece el puzzle nuevo?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cada puzzle diario cambia a las 00:00 UTC, igual para todos los jugadores del mundo." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Categorías <span class="accent">del Día</span></h1>
+  <p class="tagline">Un juego de palabras diario: encuentra las 4 categorías ocultas</p>
+</header>
+
+<main>
+  <section id="howto" class="howto card">
+    <h2>Cómo jugar</h2>
+    <details>
+      <summary>Mostrar instrucciones</summary>
+      <p>Cada día aparecen 16 palabras que en secreto pertenecen a 4 grupos de 4. Tu objetivo es encontrar los 4 grupos.</p>
+      <ul>
+        <li><strong>Toca hasta 4 fichas</strong> para seleccionarlas (se resaltan) y pulsa <strong>Enviar</strong> para comprobar tu grupo.</li>
+        <li>Si las 4 pertenecen a la misma categoría, se revela con su nombre y desaparece del tablero.</li>
+        <li>Si fallas, cuenta como error: tienes <strong>4 errores</strong> antes de que termine la partida.</li>
+        <li>Si de tus 4 palabras 3 son correctas y 1 no encaja, verás el aviso <strong>"¡estabas muy cerca!"</strong>.</li>
+        <li>El color indica la dificultad: 🟨 fácil, 🟩 medio, 🟦 difícil, 🟪 muy difícil (suele esconder un juego de palabras).</li>
+        <li>No puedes enviar dos veces la misma combinación exacta de 4 fichas.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="game-panel" class="game-panel card" aria-label="Tablero de juego">
+    <div id="puzzle-header">
+      <span id="puzzle-number">Categorías del Día</span>
+      <div id="header-actions">
+        <button id="btn-help" type="button" class="icon-btn" aria-label="Cómo jugar" title="Cómo jugar">❓</button>
+        <button id="btn-stats" type="button" class="icon-btn" aria-label="Estadísticas" title="Estadísticas">📊</button>
+        <button id="btn-archive" type="button" class="icon-btn" aria-label="Archivo de puzzles" title="Archivo de puzzles">🗄️</button>
+        <button id="btn-theme" type="button" class="icon-btn" aria-label="Cambiar tema" title="Tema claro / oscuro" aria-pressed="false">🌙</button>
+      </div>
+    </div>
+
+    <div id="practice-banner" hidden>
+      <span>🎓 Modo práctica — no afecta a tu puzzle diario ni a tus estadísticas</span>
+      <button id="btn-back-daily" type="button">Volver al de hoy</button>
+    </div>
+
+    <div id="solved-groups"></div>
+
+    <div id="mistakes-row" aria-label="Errores cometidos"></div>
+
+    <div id="status-message" role="status" aria-live="polite"></div>
+
+    <div id="grid" aria-label="Cuadrícula de 16 palabras"></div>
+
+    <div id="game-controls">
+      <button id="btn-deselect" type="button" disabled>Deseleccionar</button>
+      <button id="btn-shuffle" type="button">Mezclar</button>
+      <button id="btn-submit" type="button" disabled>Enviar</button>
+    </div>
+
+    <div id="result-panel" hidden>
+      <h2 id="result-title"></h2>
+      <div id="result-groups"></div>
+      <div id="share-row">
+        <button id="btn-share" type="button">Copiar resultado</button>
+        <span id="share-feedback" role="status" aria-live="polite"></span>
+      </div>
+      <p id="next-puzzle-countdown"></p>
+    </div>
+  </section>
+
+  <section id="faq" class="card">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq-item">
+      <h3>¿Cómo se juega a Categorías del Día?</h3>
+      <p>Cada día ves 16 palabras. Selecciona 4 que creas que comparten una categoría oculta y pulsa Enviar. Si aciertas, el grupo se revela con su nombre; si fallas, cuenta como error. Tienes 4 errores antes de que termine la partida.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Qué significan los colores de las categorías?</h3>
+      <p>El color indica la dificultad: amarillo es la categoría más evidente, verde y azul son intermedias, y morado es la más difícil, normalmente con un juego de palabras o una trampa.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Es gratis y necesito descargar algo?</h3>
+      <p>Es completamente gratis y funciona directamente en el navegador de tu móvil u ordenador, sin necesidad de descargar ninguna aplicación.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Puedo jugar a los puzzles de días anteriores?</h3>
+      <p>Sí, en el Archivo puedes repasar todos los puzzles anteriores en modo práctica libre, sin que afecte a tu puzzle del día ni a tus estadísticas.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Qué significa "estás muy cerca"?</h3>
+      <p>Si de tus 4 palabras seleccionadas 3 pertenecen a la misma categoría oculta y solo 1 no encaja, verás el aviso "¡Un error, estabas muy cerca!" para ayudarte a afinar tu siguiente intento.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Cuándo aparece el puzzle nuevo?</h3>
+      <p>Cada puzzle diario cambia a las 00:00 UTC, igual para todos los jugadores del mundo.</p>
+    </div>
+  </section>
+</main>
+
+<div id="modal-backdrop" class="modal-backdrop" hidden>
+  <div id="modal-welcome" class="modal card" role="dialog" aria-modal="true" aria-labelledby="modal-welcome-title" hidden>
+    <h2 id="modal-welcome-title">¡Bienvenido a Categorías del Día!</h2>
+    <p>Cada día aparecen 16 palabras que en secreto pertenecen a 4 grupos de 4. Encuéntralos antes de agotar tus errores.</p>
+    <ul>
+      <li><strong>Toca hasta 4 fichas</strong> y pulsa <strong>Enviar</strong> para comprobar tu grupo.</li>
+      <li>Tienes <strong>4 errores</strong> disponibles en toda la partida.</li>
+      <li>🟨 fácil · 🟩 medio · 🟦 difícil · 🟪 muy difícil (juego de palabras).</li>
+      <li>Explora el <strong>Archivo</strong> (🗄️) para practicar con cualquier puzzle anterior sin afectar tu progreso diario.</li>
+    </ul>
+    <button id="btn-welcome-close" type="button">¡Entendido, a jugar!</button>
+  </div>
+
+  <div id="modal-help" class="modal card" role="dialog" aria-modal="true" aria-labelledby="modal-help-title" hidden>
+    <h2 id="modal-help-title">Cómo jugar</h2>
+    <p>Cada día aparecen 16 palabras que en secreto pertenecen a 4 grupos de 4. Tu objetivo es encontrar los 4 grupos.</p>
+    <ul>
+      <li><strong>Toca hasta 4 fichas</strong> para seleccionarlas y pulsa <strong>Enviar</strong> para comprobar tu grupo.</li>
+      <li>Si las 4 pertenecen a la misma categoría, se revela con su nombre y desaparece del tablero.</li>
+      <li>Si fallas, cuenta como error: tienes <strong>4 errores</strong> antes de que termine la partida.</li>
+      <li>Si 3 de tus 4 palabras son correctas, verás el aviso <strong>"¡estabas muy cerca!"</strong>.</li>
+      <li>🟨 fácil · 🟩 medio · 🟦 difícil · 🟪 muy difícil (suele esconder un juego de palabras).</li>
+      <li>No puedes enviar dos veces la misma combinación exacta.</li>
+      <li>Usa <strong>Estadísticas</strong> (📊) para ver tu racha y <strong>Archivo</strong> (🗄️) para practicar puzzles anteriores.</li>
+    </ul>
+    <button id="btn-help-close" type="button">Cerrar</button>
+  </div>
+
+  <div id="modal-stats" class="modal card" role="dialog" aria-modal="true" aria-labelledby="modal-stats-title" hidden>
+    <h2 id="modal-stats-title">Estadísticas</h2>
+    <div id="stats-summary" class="stats-summary">
+      <div class="stat-tile"><span id="stat-played" class="stat-num">0</span><span class="stat-label">Jugados</span></div>
+      <div class="stat-tile"><span id="stat-pct" class="stat-num">0%</span><span class="stat-label">% Resueltos</span></div>
+      <div class="stat-tile"><span id="stat-streak" class="stat-num">0</span><span class="stat-label">Racha actual</span></div>
+      <div class="stat-tile"><span id="stat-best" class="stat-num">0</span><span class="stat-label">Mejor racha</span></div>
+    </div>
+    <h3>Distribución de errores</h3>
+    <div id="stats-distribution"></div>
+    <p class="stats-note">Solo cuenta el puzzle diario — los puzzles del Archivo en modo práctica no afectan a estas estadísticas.</p>
+    <button id="btn-stats-close" type="button">Cerrar</button>
+  </div>
+
+  <div id="modal-archive" class="modal card" role="dialog" aria-modal="true" aria-labelledby="modal-archive-title" hidden>
+    <h2 id="modal-archive-title">Archivo de puzzles</h2>
+    <p class="archive-hint">Elige cualquier puzzle anterior para practicarlo libremente. El modo práctica no afecta a tu progreso ni a tus estadísticas del puzzle diario.</p>
+    <div id="archive-list"></div>
+    <button id="btn-archive-close" type="button">Cerrar</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>Categorías del Día es un juego de palabras original, escrito íntegramente en español, sin dependencias externas de terceros salvo la tipografía.</p>
+  <p><a href="https://github.com/adrianezd/categorias-del-dia" rel="noopener">Código fuente en GitHub</a></p>
+</footer>
+
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
